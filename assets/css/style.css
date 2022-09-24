@@ -122,7 +122,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: #1bbd36;
+  color: hsl(215, 75%, 42%);
 }
 
 @media (max-width: 768px) {
@@ -180,7 +180,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #1bbd36;
+  color: rgb(27, 94, 189);
 }
 
 .navbar .dropdown ul {
@@ -399,7 +399,7 @@ h6 {
   background: rgba(4, 4, 4, 0.7);
   padding: 20px;
   color: #fff;
-  border-top: 5px solid #1bbd36;
+  border-top: 5px solid rgb(9, 88, 226);
 }
 
 #hero .carousel-content h2 {
@@ -496,7 +496,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #1bbd36;
+  background: hwb(204 11% 26%);
 }
 
 @media (min-width: 1024px) {
