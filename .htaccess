@@ -1,8 +1,46 @@
-<IfModule mod_rewrite.c>
+#remove html file extension https://callprintltd.com/index.html
+# to https://callprintltd.com/home
 RewriteEngine On
-RewriteBase /
-RewriteRule ^index.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
-</IfModule>
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+
+#remove html file extension https://callprintltd.com/about.html
+# to https://callprintltd.com/about
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+
+#remove html file extension https://callprintltd.com/services.html
+# to https://callprintltd.com/services
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+
+#remove html file extension https://callprintltd.com/portfolio.html
+# to https://callprintltd.com/portfolio
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+
+#remove html file extension https://callprintltd.com/index.html
+# to https://callprintltd.com/home
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+
+#remove html file extension https://callprintltd.com/index.html
+# to https://callprintltd.com/home
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
